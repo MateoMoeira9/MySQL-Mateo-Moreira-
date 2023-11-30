@@ -1,0 +1,14 @@
+create table usus(
+ id int AUTO_INCREMENT primary key,
+ usuario VARCHAR(255)NOT NULL,
+ contraseña VARCHAR(255)NOT NULL
+);
+
+ insert into usu (usuario, contraseña) value ("giovanni","mateo");
+ 
+ create table dni__usus(
+id int not null AUTO_INCREMENT,
+dni varchar(255) NOT NULL,
+usuario_ID varchar(255) NOT NULL,
+foreign key(usuario_ID) REFERENCES usus(id)
+);
